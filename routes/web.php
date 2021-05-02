@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login','HomeController@login');
+Route::get('/register','HomeController@register');
+Route::get('/account','HomeController@account');
+Route::get('/findParking','HomeController@findParking');
+Route::get('/confirm','HomeController@confirm');
+//Route::post('/register_form', 'HomeController@registerForm');
+//Route::post('/login_form', 'HomeController@loginForm');
