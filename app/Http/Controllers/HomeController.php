@@ -19,6 +19,12 @@ class HomeController extends Controller{
     public function confirm(){
         return view('confirm');
     }
+    public function register_form(){
+        return register_form;
+    }
+
+
+
 
 
 

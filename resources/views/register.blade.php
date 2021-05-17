@@ -19,11 +19,11 @@
             <li class="nav-item"><a class="nav-link active" href="{{ url('register') }}">Register</a></li>
         </ul>
     </nav>
-    <h3 align="center">Parking Registration Form</h3>
+    <h3 align="center">Parking Account Registration Form</h3>
     <br />
     <h3 align="center">Register</h3>
     <br />
-    <form method="POST" action="{{ action('HomeController@register') }}">
+    <form method="POST" action="{{ asset('scripts/register.php') }}">
         <label>Enter Username</label>
         <input type="text" name="username" class="form-control" required/>
         <br />
@@ -36,7 +36,7 @@
         <br />
         <input type="email" placeholder="Email" name="email" class="form-control" />
         <br />
-        <input type="submit" name="register" value="Sign Up" class="btn btn-info" />
+        <input type="submit" name="register"  value="Sign Up" class="btn btn-info" />
         <br />
     </form>
 </div>

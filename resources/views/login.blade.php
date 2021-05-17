@@ -25,7 +25,7 @@
     <h3 align="center">Login</h3>
     <br />
 
-    <form method="POST" action="login.php">
+    <form method="POST" action="{{ asset('scripts/login.php') }}">
         <label>Enter Username</label>
         <input type="text" name="username" class="form-control" required/>
         <br />
